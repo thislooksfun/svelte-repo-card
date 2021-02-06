@@ -1,45 +1,53 @@
 # svelte-repo-card
 
 <p align="center">
+  <a href="https://github.com/thislooksfun/svelte-repo-card/releases/latest"
+    ><img
+      alt="latest release"
+      src="https://flat.badgen.net/github/release/thislooksfun/svelte-repo-card"
+    /></a
+  >
+  <a href="https://github.com/thislooksfun/svelte-repo-card/releases"
+    ><img
+      alt="latest stable release"
+      src="https://flat.badgen.net/github/release/thislooksfun/svelte-repo-card/stable"
+    /></a
+  >
   <img
-    src="https://flat.badgen.net/github/release/thislooksfun/svelte-repo-card"
-    alt="latest release"
-  />
-  <img
-    src="https://flat.badgen.net/github/release/thislooksfun/svelte-repo-card/stable"
-    alt="latest stable release"
-  />
-  <img
-    src="https://flat.badgen.net/github/checks/thislooksfun/svelte-repo-card"
     alt="checks status"
+    src="https://flat.badgen.net/github/checks/thislooksfun/svelte-repo-card"
   />
   <img
-    src="https://flat.badgen.net/github/dependabot/thislooksfun/svelte-repo-card"
-    alt="dependabot status"
-  />
-  <img
-    src="https://flat.badgen.net/github/license/thislooksfun/svelte-repo-card"
     alt="license"
+    src="https://flat.badgen.net/github/license/thislooksfun/svelte-repo-card"
   />
 </p>
 
 <p align="center">
-  <img
-    src="https://flat.badgen.net/npm/v/svelte-repo-card"
-    alt="npm version"
-  />
-  <img
-    src="https://flat.badgen.net/npm/types/svelte-repo-card"
-    alt="npm types"
-  />
-  <img
-    src="https://flat.badgen.net/npm/dw/svelte-repo-card"
-    alt="weekly npm downloads"
-  />
-  <img
-    src="https://flat.badgen.net/npm/dependents/svelte-repo-card"
-    alt="npm dependents"
-  />
+  <a href="https://npmjs.com/package/svelte-repo-card"
+    ><img
+      alt="npm version"
+      src="https://flat.badgen.net/npm/v/svelte-repo-card"
+    /></a
+  >
+  <a href="https://npmjs.com/package/svelte-repo-card"
+    ><img
+      alt="npm types"
+      src="https://flat.badgen.net/npm/types/svelte-repo-card"
+    /></a
+  >
+  <a href="https://npmjs.com/package/svelte-repo-card"
+    ><img
+      alt="weekly npm downloads"
+      src="https://flat.badgen.net/npm/dw/svelte-repo-card"
+    /></a
+  >
+  <a href="https://npmjs.com/package/svelte-repo-card"
+    ><img
+      alt="npm dependents"
+      src="https://flat.badgen.net/npm/dependents/svelte-repo-card"
+    /></a
+  >
 </p>
 
 A simple GitHub repo card component based on [Tarptaeya/repo-card](https://github.com/Tarptaeya/repo-card).
