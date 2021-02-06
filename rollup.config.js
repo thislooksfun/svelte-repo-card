@@ -32,8 +32,11 @@ export default {
     commonjs(),
     typescript({ sourceMap: true }),
     svelte({
-      dev: !production,
       preprocess: autoPreprocess({ sourceMap: true }),
+      compilerOptions: {
+        dev: !production,
+      },
+      emitCss: false,
     }),
     resolve({
       dedupe: ["svelte"],
