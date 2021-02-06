@@ -55,7 +55,7 @@ A simple GitHub repo card component based on [Tarptaeya/repo-card](https://githu
 ## Installation
 
 ```
-npm i svelte-repo-card
+npm i -D svelte-repo-card
 ```
 
 ## Usage
