@@ -11,7 +11,7 @@
     "dev": "rollup -c -w",
     "validate": "svelte-check",
     "clean": "rm -rf dist",
-    "lint": "prettier -c '**/*'",
+    "lint": "svelte-check && prettier -c '**/*'",
     "prepublishOnly": "pinst --disable && npm run clean && npm run validate && npm run build",
     "postpublish": "pinst --enable"
   },
