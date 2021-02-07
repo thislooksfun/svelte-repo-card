@@ -6,11 +6,11 @@
   export let name: string;
   export let url: string;
   export let isFork: boolean;
-  export let description: string | undefined;
-  export let sourceUrl: string | undefined;
-  export let sourceName: string | undefined;
-  export let language: string | undefined;
-  export let langColor: string | undefined;
+  export let description: string | undefined = undefined;
+  export let sourceUrl: string | undefined = undefined;
+  export let sourceName: string | undefined = undefined;
+  export let language: string | undefined = undefined;
+  export let langColor: string | undefined = undefined;
   export let stars: number;
   export let forks: number;
 </script>

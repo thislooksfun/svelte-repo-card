@@ -7,13 +7,11 @@ export interface Repo {
   name: string;
   url: string;
   isFork: boolean;
-  // TODO: Make these optional
-  // BODY: Pending https://github.com/sveltejs/language-tools/issues/805
-  description: string | undefined;
-  sourceUrl: string | undefined;
-  sourceName: string | undefined;
-  language: string | undefined;
-  langColor: string | undefined;
+  description?: string;
+  sourceUrl?: string;
+  sourceName?: string;
+  language?: string;
+  langColor?: string;
   stars: number;
   forks: number;
 }
