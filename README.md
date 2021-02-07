@@ -60,6 +60,8 @@ npm i -D svelte-repo-card
 
 ## Usage
 
+<!-- TODO: pending sveltejs/prettier-plugin-svelte#202 -->
+<!-- prettier-ignore -->
 ```svelte
 <script>
   import RepoCard from "svelte-repo-card";
