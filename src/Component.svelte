@@ -11,13 +11,17 @@
 
 <Card>
   {#await promise}
-    <span>Loading card for <a href={url}>{slug}</a>...</span>
+    <span data-testid="loading">
+      Loading card for <a href={url}>{slug}</a>...
+    </span>
   {:then repo}
     <Repo {...repo} />
   {:catch e}
-    <span>Failed to load card for <a href={url}>{slug}</a>.</span>
+    <span data-testid="failed">
+      Failed to load card for <a href={url}>{slug}</a>.
+    </span>
     {#if e && e.message}
-      <span>{e.message}</span>
+      <span data-testid="errmsg">{e.message}</span>
     {/if}
   {/await}
 </Card>

@@ -19,41 +19,41 @@
   <div class="header">
     <div class="name icon-container">
       <RepoIcon />
-      <a href={url}>{name}</a>
+      <a href={url} data-testid="repo-name">{name}</a>
     </div>
 
     {#if isFork}
-      <div class="small">
-        Forked from <a href={sourceUrl}>{sourceName}</a>
+      <div class="small" data-testid="fork">
+        Forked from <a href={sourceUrl} data-testid="fork-link">{sourceName}</a>
       </div>
     {/if}
   </div>
 
   {#if description}
-    <div>
+    <div data-testid="description">
       {description}
     </div>
   {/if}
 
   <div class="meta small">
     {#if language}
-      <div class="lang">
+      <div class="lang" data-testid="language">
         <span class="lang-color" style="background-color: {langColor};" />
-        <span>{language}</span>
+        <span data-testid="lang-name">{language}</span>
       </div>
     {/if}
 
     {#if stars > 0}
-      <div class="icon-container">
+      <div class="icon-container" data-testid="stars">
         <StarIcon />
-        &nbsp; <span>{stars}</span>
+        &nbsp; <span data-testid="star-count">{stars}</span>
       </div>
     {/if}
 
     {#if forks > 0}
-      <div class="icon-container">
+      <div class="icon-container" data-testid="forks">
         <ForkIcon />
-        &nbsp; <span>{forks}</span>
+        &nbsp; <span data-testid="fork-count">{forks}</span>
       </div>
     {/if}
   </div>
