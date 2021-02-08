@@ -28,6 +28,12 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/semantic-release/semantic-release"
+    ><img
+      alt="semantic release"
+      src="https://flat.badgen.net/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80/semantic%20release/e10079"
+    /></a
+  >
   <a href="https://www.npmjs.com/package/svelte-repo-card?activeTab=versions"
     ><img
       alt="npm version"
