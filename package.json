@@ -14,7 +14,7 @@
     "test": "jest",
     "clean": "rm -rf dist",
     "lint": "svelte-check && prettier -c '**/*'",
-    "prepublishOnly": "pinst --disable && npm run clean && npm run validate && npm run build",
+    "prepublishOnly": "pinst --disable && npm run clean && npm run lint && npm run build",
     "postpublish": "pinst --enable"
   },
   "devDependencies": {
