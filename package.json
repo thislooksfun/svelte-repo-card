@@ -48,7 +48,7 @@
     "rollup": "^2.38.5",
     "rollup-plugin-svelte": "^7.1.0",
     "rollup-plugin-terser": "^7.0.2",
-    "semantic-release": "^17.3.8",
+    "semantic-release": "17.3.7",
     "svelte": "^3.32.2",
     "svelte-check": "^1.1.33",
     "svelte-jester": "^1.3.0",
