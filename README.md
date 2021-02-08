@@ -13,10 +13,12 @@
       src="https://flat.badgen.net/github/release/thislooksfun/svelte-repo-card/stable"
     /></a
   >
-  <img
-    alt="checks status"
-    src="https://flat.badgen.net/github/checks/thislooksfun/svelte-repo-card"
-  />
+  <a href="#"
+    ><img
+      alt="checks status"
+      src="https://flat.badgen.net/github/checks/thislooksfun/svelte-repo-card"
+    /></a
+  >
   <img
     alt="license"
     src="https://flat.badgen.net/github/license/thislooksfun/svelte-repo-card"
