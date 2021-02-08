@@ -19,32 +19,34 @@
       src="https://flat.badgen.net/github/checks/thislooksfun/svelte-repo-card"
     /></a
   >
-  <img
-    alt="license"
-    src="https://flat.badgen.net/github/license/thislooksfun/svelte-repo-card"
-  />
+  <a href="https://github.com/thislooksfun/svelte-repo-card/blob/master/LICENSE"
+    ><img
+      alt="license"
+      src="https://flat.badgen.net/github/license/thislooksfun/svelte-repo-card"
+    /></a
+  >
 </p>
 
 <p align="center">
-  <a href="https://npmjs.com/package/svelte-repo-card"
+  <a href="https://www.npmjs.com/package/svelte-repo-card?activeTab=versions"
     ><img
       alt="npm version"
       src="https://flat.badgen.net/npm/v/svelte-repo-card"
     /></a
   >
-  <a href="https://npmjs.com/package/svelte-repo-card"
+  <a href="https://github.com/thislooksfun/svelte-repo-card/tree/master/types"
     ><img
       alt="npm types"
       src="https://flat.badgen.net/npm/types/svelte-repo-card"
     /></a
   >
-  <a href="https://npmjs.com/package/svelte-repo-card"
+  <a href="https://www.npmjs.com/package/svelte-repo-card"
     ><img
       alt="weekly npm downloads"
       src="https://flat.badgen.net/npm/dw/svelte-repo-card"
     /></a
   >
-  <a href="https://npmjs.com/package/svelte-repo-card"
+  <a href="https://www.npmjs.com/package/svelte-repo-card?activeTab=dependents"
     ><img
       alt="npm dependents"
       src="https://flat.badgen.net/npm/dependents/svelte-repo-card"
