@@ -5,6 +5,7 @@
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "types": "./types/index.d.ts",
+  "license": "MIT",
   "scripts": {
     "postinstall": "husky install",
     "build": "rollup -c",
