@@ -77,7 +77,12 @@ npm i -D svelte-repo-card
   import RepoCard from "svelte-repo-card";
 </script>
 
-<RepoCard slug="thislooksfun/svelte-repo-card" />
+<RepoCard slug="<user>/<repo>" />
 ```
 
 It's that simple!
+
+## Examples
+
+1. `<RepoCard slug="thislooksfun/svelte-repo-card" />`: ![example screenshot](./docs/images/example-svelte-repo-card.png)
+1. `<RepoCard slug="thislooksfun/SwiftlySearch" />`: ![example screenshot](./docs/images/example-swiftlysearch.png)

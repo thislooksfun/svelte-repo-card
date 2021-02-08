@@ -26,6 +26,9 @@ yarn-error.log*
 # Coverage report
 /coverage
 
+# Binary files
+*.png
+
 # Misc files
 .gitignore
 .prettierignore
