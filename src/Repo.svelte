@@ -71,7 +71,7 @@
 
   .repo {
     text-align: start;
-    color: #586069;
+    color: var(--svc-text-primary, #586069);
     font-size: 1em;
   }
 
@@ -81,7 +81,7 @@
 
   .name {
     font-weight: 600;
-    color: #0366d6;
+    color: var(--svc-text-link, #0366d6);
 
     a {
       margin-left: 0.35em;
@@ -120,7 +120,7 @@
 
     :global(svg) {
       width: 1em;
-      fill: #586069;
+      fill: var(--svc-text-primary, #586069);
     }
   }
 </style>
