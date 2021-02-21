@@ -39,6 +39,7 @@ export default {
       emitCss: false,
     }),
     resolve({
+      browser: true,
       dedupe: ["svelte"],
     }),
     production && terser(),
