@@ -80,6 +80,53 @@ npm i -D svelte-repo-card
 
 It's that simple!
 
+### Theming
+
+If you want to control the appearance of the card you have three options:
+
+1. Pass `"light"` or `"dark"` to the `theme` attribute to use the built-in light and dark themes.
+
+```svelte
+<RepoCard slug="<user>/<repo>" theme="light" />
+<RepoCard slug="<user>/<repo>" theme="dark" />
+```
+
+2. Pass a full custom object.
+
+```svelte
+<script lang="ts">
+  // {...}
+
+  import type { Theme } from "svelte-repo-card";
+  const theme: Theme = {
+    // The color of the text.
+    text: "#586069",
+
+    // The color of the links.
+    link: "#0366d6",
+
+    // The background color.
+    background: "#ffffff",
+
+    // The border color.
+    border: "#e1e4e8",
+  };
+</script>
+
+<RepoCard slug="<user>/<repo>" {theme} />
+```
+
+3. Use the `--svc-*` css variables:
+
+```css
+:root {
+  --svc-text-primary: #586069;
+  --svc-text-link: #0366d6;
+  --svc-background: #ffffff;
+  --svc-border-color: #e1e4e8;
+}
+```
+
 ## Examples
 
 1. `<RepoCard slug="thislooksfun/svelte-repo-card" />`: ![example screenshot](./docs/images/example-svelte-repo-card.png)
