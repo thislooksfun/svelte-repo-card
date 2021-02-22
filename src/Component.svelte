@@ -53,3 +53,9 @@
     {/if}
   {/await}
 </Card>
+
+<style lang="less">
+  a {
+    color: var(--svc-text-link, #0366d6);
+  }
+</style>
