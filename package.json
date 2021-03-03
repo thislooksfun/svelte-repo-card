@@ -1,6 +1,6 @@
 {
   "name": "svelte-repo-card",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple GitHub repo card, based on Tarptaeya/repo-card",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
