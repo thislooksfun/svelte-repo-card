@@ -28,6 +28,7 @@ yarn-error.log*
 
 # Binary files
 *.png
+*.tgz
 
 # Misc files
 .gitignore
