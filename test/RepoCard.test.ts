@@ -83,6 +83,16 @@ it("renders the card correctly", async () => {
       } else {
         expect(queryByTestId("forks")).not.toBeInTheDocument();
       }
+
+      if (repo.homepage) {
+        expect(getByTestId("homepage")).toBeInTheDocument();
+        const hl = getByTestId("homepage-link");
+        expect(hl).toBeInTheDocument();
+        expect(hl.getAttribute("href")).toEqual(repo.homepage);
+        expect(hl.textContent).toEqual(repo.homepage);
+      } else {
+        expect(queryByTestId("homepage")).not.toBeInTheDocument();
+      }
     })
   );
 });

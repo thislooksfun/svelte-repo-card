@@ -6,6 +6,7 @@
   export let name: string;
   export let url: string;
   export let isFork: boolean;
+  export let homepage: string | undefined = undefined;
   export let description: string | undefined = undefined;
   export let sourceUrl: string | undefined = undefined;
   export let sourceName: string | undefined = undefined;
@@ -56,6 +57,12 @@
         &nbsp; <span data-testid="fork-count">{forks}</span>
       </div>
     {/if}
+
+    {#if homepage}
+      <div class="homepage" data-testid="homepage">
+        <a href={homepage} data-testid="homepage-link">{homepage}</a>
+      </div>
+    {/if}
   </div>
 </div>
 
@@ -86,6 +93,10 @@
     a {
       margin-left: 0.35em;
     }
+  }
+
+  .homepage {
+    color: var(--svc-text-link, #0366d6);
   }
 
   .small {

@@ -4,6 +4,7 @@ import getColors from "./colors";
 export interface RawRepo {
   name: string;
   html_url: string;
+  homepage: string;
   description?: string;
   language?: string;
   fork: boolean;
@@ -19,6 +20,7 @@ export interface Repo {
   name: string;
   url: string;
   isFork: boolean;
+  homepage?: string;
   description?: string;
   sourceUrl?: string;
   sourceName?: string;
@@ -39,6 +41,7 @@ async function transform(repo: RawRepo): Promise<Repo> {
     forks: repo.forks,
   };
 
+  if (repo.homepage) out.homepage = repo.homepage;
   if (repo.description != null) out.description = repo.description;
   if (repo.source != null) {
     out.sourceName = repo.source.full_name;

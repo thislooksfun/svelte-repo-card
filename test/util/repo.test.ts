@@ -26,6 +26,7 @@ describe("getRepo()", () => {
       fc.asyncProperty(
         fc.string(), // name
         fc.string(), // html_url
+        fc.option(fc.webUrl()), // homepage
         fc.option(fc.string()), // description?
         fc.option(fc.string()), // language?
         fc.boolean(), // fork
@@ -38,9 +39,10 @@ describe("getRepo()", () => {
         ),
         fc.integer(), // stargazers_count
         fc.integer(), // forks
-        async (name, url, desc, lang, fork, src, sg, forks) => {
-          const raw = buildRaw(name, url, desc, lang, fork, src, sg, forks);
-          const repo = buildRepo(name, url, desc, lang, fork, src, sg, forks);
+        async (name, url, hp, desc, lang, frk, src, sg, frks) => {
+          const hpr = hp ? hp : "";
+          const raw = buildRaw(name, url, hpr, desc, lang, frk, src, sg, frks);
+          const repo = buildRepo(name, url, hp, desc, lang, frk, src, sg, frks);
 
           if (lang != null) {
             fetchColors.mockResolvedValue({

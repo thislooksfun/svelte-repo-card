@@ -4,6 +4,7 @@ import fc from "fast-check";
 export function buildRaw(
   name: string,
   html_url: string,
+  homepage: string,
   desc: string | null,
   lang: string | null,
   fork: boolean,
@@ -11,7 +12,14 @@ export function buildRaw(
   stargazers_count: number,
   forks: number
 ): RawRepo {
-  let raw: RawRepo = { name, html_url, fork, stargazers_count, forks };
+  let raw: RawRepo = {
+    name,
+    html_url,
+    homepage,
+    fork,
+    stargazers_count,
+    forks,
+  };
   if (desc != null) raw.description = desc;
   if (lang != null) raw.language = lang;
   if (src != null) raw.source = src;
@@ -22,6 +30,7 @@ export function buildRaw(
 export function buildRepo(
   name: string,
   url: string,
+  homepage: string | null,
   desc: string | null,
   lang: string | null,
   isFork: boolean,
@@ -30,6 +39,7 @@ export function buildRepo(
   forks: number
 ): Repo {
   let repo: Repo = { name, url, isFork, stars, forks };
+  if (homepage != null) repo.homepage = homepage;
   if (desc != null) repo.description = desc;
   if (lang != null) {
     repo.language = lang;
@@ -48,6 +58,7 @@ function _randRepoOwn(): fc.Arbitrary<Repo> {
     {
       name: fc.string(),
       url: fc.webUrl(),
+      homepage: fc.webUrl(),
       description: fc.string(),
       language: fc.string(),
       isFork: fc.constant(false),
@@ -63,6 +74,7 @@ function _randRepoFork(): fc.Arbitrary<Repo> {
     {
       name: fc.string(),
       url: fc.webUrl(),
+      homepage: fc.webUrl(),
       description: fc.string(),
       language: fc.string(),
       isFork: fc.constant(true),
