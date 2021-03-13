@@ -73,7 +73,7 @@
     "type": "git",
     "url": "git+https://github.com/thislooksfun/svelte-repo-card.git"
   },
-  "author": "thislooksfun <thislooksfun@repbot.org> (https://thislooks.fun)",
+  "author": "thislooksfun <tlf@thislooks.fun> (https://thislooks.fun)",
   "bugs": {
     "url": "https://github.com/thislooksfun/svelte-repo-card/issues"
   },
