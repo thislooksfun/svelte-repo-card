@@ -131,3 +131,4 @@ If you want to control the appearance of the card you have three options:
 
 1. `<RepoCard slug="thislooksfun/svelte-repo-card" />`: ![example screenshot](./docs/images/example-svelte-repo-card.png)
 1. `<RepoCard slug="thislooksfun/SwiftlySearch" />`: ![example screenshot](./docs/images/example-swiftlysearch.png)
+1. For a live demo you can check out [my website](https://thislooks.fun).
