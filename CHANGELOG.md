@@ -1,3 +1,10 @@
+## [1.3.0](https://github.com/thislooksfun/svelte-repo-card/compare/v1.2.0...v1.3.0) (2021-03-21)
+
+
+### Features
+
+* move the homepage link above the description ([6205875](https://github.com/thislooksfun/svelte-repo-card/commit/62058750e7615a9f9c7583a7a16925a3e28ef9c9))
+
 ## [1.2.0](https://github.com/thislooksfun/svelte-repo-card/compare/v1.1.0...v1.2.0) (2021-03-13)
 
 
