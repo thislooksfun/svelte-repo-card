@@ -30,6 +30,12 @@
     {/if}
   </div>
 
+  {#if homepage}
+    <div class="homepage" data-testid="homepage">
+      <a href={homepage} data-testid="homepage-link">{homepage}</a>
+    </div>
+  {/if}
+
   {#if description}
     <div data-testid="description">
       {description}
@@ -55,12 +61,6 @@
       <div class="icon-container" data-testid="forks">
         <ForkIcon />
         &nbsp; <span data-testid="fork-count">{forks}</span>
-      </div>
-    {/if}
-
-    {#if homepage}
-      <div class="homepage" data-testid="homepage">
-        <a href={homepage} data-testid="homepage-link">{homepage}</a>
       </div>
     {/if}
   </div>
